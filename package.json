@@ -1,0 +1,23 @@
+{
+  "name": "stripe-customer-bdd",
+  "version": "1.0.0",
+  "description": "Playwright + Cucumber BDD automation for Stripe Customer Management (CUST-001 to CUST-040)",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:navigation": "cucumber-js --tags @navigation",
+    "test:happy-path": "cucumber-js --tags @happy-path",
+    "test:validation": "cucumber-js --tags @validation",
+    "test:edge-case": "cucumber-js --tags @edge-case",
+    "test:boundary": "cucumber-js --tags @boundary",
+    "test:report": "cucumber-js --format html:reports/cucumber-report.html"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.3.2",
+    "@playwright/test": "^1.44.0",
+    "playwright": "^1.44.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.5"
+  }
+}
